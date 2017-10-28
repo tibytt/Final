@@ -1,0 +1,49 @@
+<body>
+    <form [formGroup] = "userform"
+    (ngSubmit) = "onSubmit()" >
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="email@ejemplo.com" formControlName= "email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Nombre</label>
+            <input type="text" class="form-control" id="inputPassword4" name="password" placeholder="Nombre" formControlName= "password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 callerara" name="address" formControlName= "direccion" >
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Pais</label>
+          <input type="text" class="form-control" id="inputAddress2" name="addresso" placeholder="Pais" formControlName= "pais"  >
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity" name="city" placeholder="Ciudad" formControlName= "ciudad">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Provincia</label>
+            <input type="text" class="form-control" id="inputstate" name="state" placeholder="Provincia" formControlName= "provincia" >
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">CodigoPostal</label>
+            <input type="text" class="form-control" id="inputZip" name="zip" formControlName= "codigo" >
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark">enviar</button>
+      </form>
+
+
+
+
+</body>
