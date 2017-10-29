@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostService } from '../post.service';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-home',

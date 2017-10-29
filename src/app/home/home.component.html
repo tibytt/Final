@@ -9,15 +9,18 @@
 
 </body>
 
-<div class="col-md-6 col-md-pull-3">
-  <h2>Posts ({{ posts?.length }})</h2>
-  <div *ngFor="let post of posts">
-      <div class="card ">
-          <div class="card-block">
-              <h4 class="card-title">{{ post.title }}</h4>
-              <p class="card-text">{{ post.body }}</p>
-              <a [routerLink]="['/post', post.id]" class="card-link">Leer mas</a>
-          </div>
-      </div>
-  </div>
-</div>
+
+
+<div class="container">
+    
+    <div class="card mb-3" *ngFor="let post of posts | paginate: { itemsPerPage: 5, currentPage: p }">
+        <div class="card-body">
+          <h4 class="card-title"><a [routerLink]="['/post', post.id]">{{ post.title}}</a></h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        
+          <p class="card-text"><small class="text-muted"><a [routerLink]="['/post', post.id]">ver mas</a></small></p>
+        </div>
+    </div>
+    <div class="aligncenter"><pagination-controls (pageChange)="p = $event"></pagination-controls></div>
+    
+    </div>
