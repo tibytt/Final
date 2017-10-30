@@ -17,8 +17,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostsComponent } from './posts/posts.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
-import { EnviadoComponent } from './enviado/enviado.component';
+
 import { CommentsComponent } from './comments/comments.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -35,8 +36,10 @@ import { CommentsComponent } from './comments/comments.component';
     NavbarComponent,
     PostsComponent,
     NosotrosComponent,
-    EnviadoComponent,
-    CommentsComponent
+  
+    CommentsComponent,
+  
+    UsersComponent
   ],
   imports: [
     ReactiveFormsModule,
